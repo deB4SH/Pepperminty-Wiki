@@ -35,7 +35,7 @@ jobs:
             org.label-schema.schema-version="1.0"
           tags: |
             type=schedule
-            type=ref,event=tag
+            type=sha
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
